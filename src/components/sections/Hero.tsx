@@ -18,7 +18,7 @@ export function Hero() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="mb-6 hidden items-center gap-2 rounded-full border border-forest-deep-15 bg-white px-4 py-1.5 text-xs font-medium uppercase tracking-[0.14em] text-forest-mid sm:inline-flex"
           >
-            Operations &amp; administration support &middot; Isle of Man
+            Operations &amp; administration support
           </motion.p>
 
           <motion.h1

@@ -29,8 +29,8 @@ export default function AboutPage() {
         description={
           <>
             Invistaff was founded by {siteConfig.founder} in the {siteConfig.location},
-            launching in 2026 after seeing, first-hand, how disorganised the
-            administrative side of a busy trades business can become.
+            launched in 2026 after seeing, first-hand, how disorganised the
+            operational side of a busy trades business can become.
           </>
         }
         playbackId="RlhiDjm7M602ZDIlpWBCPzY4kmwjvXg7jmumWEs5jslw"
@@ -46,26 +46,37 @@ export default function AboutPage() {
               </h2>
               <div className="pretty mt-5 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  The idea for Invistaff came from watching the administrative
-                  and operational side of a garage door and gate company
-                  become increasingly disorganised, invoices sent weeks
-                  after jobs were finished, unpaid invoices going unchased,
-                  customer communications slipping, and paperwork being done
-                  late at night after a full day&apos;s work.
+                  The idea for Invistaff came from working inside a
+                  construction business where the processes were all over
+                  the place. If someone went on holiday, things started
+                  falling apart within days, nobody had a clear way to leave
+                  notes, there were no standard operating procedures, and
+                  most of it was still running on paper. Stock ran out
+                  constantly, not because anyone wasn&apos;t trying, but
+                  because there was no system catching it before it became a
+                  problem.
                 </p>
                 <p>
-                  Conversations with other tradespeople made it clear this
-                  wasn&apos;t a one-off. The same pattern kept showing up:
-                  people who were excellent at their trade, but never had the
-                  time, or the inclination, to spend their evenings on
-                  emails, quotes, paperwork and systems.
+                  Talking to other business owners in construction, it
+                  became clear this wasn&apos;t unique to one company. The
+                  same gaps kept coming up, no documentation, no continuity
+                  when someone was away, processes that only worked because
+                  one person happened to be holding it all together in
+                  their head.
                 </p>
                 <p>
-                  {siteConfig.founder} brings around four years of operational
-                  experience within the construction industry, alongside two
-                  years working on-site around tradespeople, giving her an
-                  understanding of both the practical and operational sides
-                  of these businesses, not just the admin in isolation.
+                  Invistaff exists to fix that: to build the systems,
+                  documentation and day-to-day admin structure that mean a
+                  business doesn&apos;t fall over the moment someone takes a
+                  week off.
+                </p>
+                <p>
+                  {siteConfig.founder} brings years of operational
+                  experience within the construction industry, alongside
+                  two years working on-site as a fire alarm engineer,
+                  giving her an understanding of both the practical and
+                  operational sides of these businesses, not just the admin
+                  in isolation.
                 </p>
                 <p>
                   Invistaff was built to sit in the practical middle ground:
@@ -89,8 +100,8 @@ export default function AboutPage() {
                 ))}
               </ul>
               <div className="mt-6 border-t border-forest-deep-15 pt-5 text-sm text-ink-soft">
-                <p>~4 years of operational experience in construction</p>
-                <p className="mt-1">~2 years on-site working around tradespeople</p>
+                <p>Years of operational experience in construction</p>
+                <p className="mt-1">~2 years on-site as a fire alarm engineer</p>
               </div>
             </Reveal>
           </div>

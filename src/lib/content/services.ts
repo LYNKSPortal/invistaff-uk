@@ -101,7 +101,7 @@ export const servicePillars: ServicePillar[] = [
     id: "administration",
     title: "Administration Support",
     standfirst:
-      "The day-to-day admin that pulls you away from the tools, the site and your team, handled properly, consistently, and on time.",
+      "The day-to-day admin that pulls you away from actually running your business, handled properly, consistently, and on time.",
     services: [
       {
         slug: "inbox-management",

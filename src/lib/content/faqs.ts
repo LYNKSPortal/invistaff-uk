@@ -10,14 +10,9 @@ export const faqs: FAQ[] = [
       "Invistaff takes care of the administration and operational work that pulls you away from running your business, things like inboxes, diaries, quotations, invoicing and customer communications. We also look at why those tasks take up so much time in the first place, and improve the underlying processes and systems so there's less admin to deal with going forward.",
   },
   {
-    question: "Is Invistaff just a virtual assistant service?",
-    answer:
-      "No. A virtual assistant typically works through a task list. Invistaff does that, but also looks at how your business currently operates, reviewing processes, building SOPs and implementing systems, so we're improving the way work gets done, not just doing the tasks as they currently exist.",
-  },
-  {
     question: "Who is Invistaff for?",
     answer:
-      "Invistaff is built primarily for established trades and construction businesses, typically turning over £100k or more, where the owner is busy on-site or managing jobs and doesn't have time left for admin. We work with other sectors too, including technology, logistics, property and healthcare, where the same problem, too much operational work and not enough time, applies.",
+      "Invistaff is built for small and growing businesses where the owner is doing the work of running the business, client work, service delivery, managing a team, and doesn't have time left over for admin or improvements. We've worked with businesses in industries including technology, logistics, property, healthcare, professional services and more. If operational work is piling up faster than you can clear it, that's the problem we solve.",
   },
   {
     question: "How do I know what service I need?",
