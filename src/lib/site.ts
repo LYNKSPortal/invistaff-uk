@@ -8,6 +8,9 @@ export const siteConfig = {
   founder: "Aalish Kissack",
   location: "Isle of Man",
   email: "hello@invistaff.co.uk",
+  // Inbox that receives new contact form submissions (separate from the
+  // public-facing contact email shown to visitors).
+  contactFormRecipient: "info@invistaff.com",
   phone: "07624 322669",
   phoneHref: "tel:+447624322669",
   hours: {
