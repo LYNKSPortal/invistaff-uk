@@ -7,7 +7,7 @@ export const siteConfig = {
     "Invistaff provides flexible administration and operational support for busy trades and construction businesses in the Isle of Man, helping owners get their time back.",
   founder: "Aalish Kissack",
   location: "Isle of Man",
-  email: "hello@invistaff.co.uk",
+  email: "hello@invistaff.com",
   // Inbox that receives new contact form submissions (separate from the
   // public-facing contact email shown to visitors).
   contactFormRecipient: "info@invistaff.com",
