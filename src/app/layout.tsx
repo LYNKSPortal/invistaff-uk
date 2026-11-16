@@ -53,8 +53,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/favicon/facebook-twitter-meta-og-image.jpg",
-        width: 1200,
-        height: 630,
+        width: 1000,
+        height: 1000,
         alt: siteConfig.name,
       },
     ],
