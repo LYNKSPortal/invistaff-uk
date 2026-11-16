@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/layout/CookieConsent";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, buildSocialMetadata } from "@/lib/site";
 import { serviceSteps } from "@/lib/content/services";
 
 const fraunces = Fraunces({
@@ -44,28 +44,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/favicon/site.webmanifest",
-  openGraph: {
-    type: "website",
-    locale: "en_GB",
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: `${siteConfig.name} | Busy isn't always profitable`,
-    description: siteConfig.description,
-    images: [
-      {
-        url: "/favicon/facebook-twitter-meta-og-image.jpg",
-        width: 1000,
-        height: 1000,
-        alt: siteConfig.name,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${siteConfig.name} | Busy isn't always profitable`,
-    description: siteConfig.description,
-    images: ["/favicon/facebook-twitter-meta-og-image.jpg"],
-  },
+  ...buildSocialMetadata("Busy isn't always profitable", siteConfig.description, "/"),
   alternates: {
     canonical: "/",
   },

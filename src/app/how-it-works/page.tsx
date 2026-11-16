@@ -4,12 +4,16 @@ import { PageHero } from "@/components/sections/PageHero";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { CTASection } from "@/components/sections/CTASection";
 import { processSteps } from "@/lib/content/process";
+import { buildSocialMetadata } from "@/lib/site";
+
+const description =
+  "From a free Money Leak Check through to ongoing support, here's the seven-step process behind working with Invistaff.";
 
 export const metadata: Metadata = {
   title: "How It Works",
-  description:
-    "From a free Money Leak Check through to ongoing support, here's the seven-step process behind working with Invistaff.",
+  description,
   alternates: { canonical: "/how-it-works" },
+  ...buildSocialMetadata("How It Works", description, "/how-it-works"),
 };
 
 export default function HowItWorksPage() {

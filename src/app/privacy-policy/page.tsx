@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/ui/LegalPage";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, buildSocialMetadata } from "@/lib/site";
+
+const description = "How Invistaff collects, uses and protects your information.";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Invistaff collects, uses and protects your information.",
+  description,
   alternates: { canonical: "/privacy-policy" },
   robots: { index: true, follow: true },
+  ...buildSocialMetadata("Privacy Policy", description, "/privacy-policy"),
 };
 
 export default function PrivacyPolicyPage() {

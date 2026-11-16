@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/ui/LegalPage";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, buildSocialMetadata } from "@/lib/site";
+
+const description = "How Invistaff uses cookies on this website.";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: "How Invistaff uses cookies on this website.",
+  description,
   alternates: { canonical: "/cookie-policy" },
+  ...buildSocialMetadata("Cookie Policy", description, "/cookie-policy"),
 };
 
 export default function CookiePolicyPage() {

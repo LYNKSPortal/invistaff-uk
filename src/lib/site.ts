@@ -31,6 +31,40 @@ export const siteConfig = {
   bookingUrl: "https://calendly.com/",
 };
 
+// Shared Open Graph / Twitter image, reused across every page so link
+// previews on LinkedIn, Facebook, X, Slack, etc. always have an image.
+export const socialImage = {
+  url: "/favicon/facebook-twitter-meta-og-image.jpg",
+  width: 1000,
+  height: 1000,
+};
+
+/**
+ * Builds page-specific Open Graph / Twitter card metadata so each page gets
+ * its own title, description and canonical URL when shared on social
+ * media, instead of every page inheriting the homepage's preview.
+ */
+export function buildSocialMetadata(title: string, description: string, path: string) {
+  const fullTitle = `${title} | ${siteConfig.name}`;
+  return {
+    openGraph: {
+      type: "website" as const,
+      locale: "en_GB",
+      url: `${siteConfig.url}${path}`,
+      siteName: siteConfig.name,
+      title: fullTitle,
+      description,
+      images: [{ ...socialImage, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: fullTitle,
+      description,
+      images: [socialImage.url],
+    },
+  };
+}
+
 export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },

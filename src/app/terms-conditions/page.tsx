@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/ui/LegalPage";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, buildSocialMetadata } from "@/lib/site";
+
+const description = "The terms and conditions for using the Invistaff website and engaging our services.";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
-  description: "The terms and conditions for using the Invistaff website and engaging our services.",
+  description,
   alternates: { canonical: "/terms-conditions" },
+  ...buildSocialMetadata("Terms & Conditions", description, "/terms-conditions"),
 };
 
 export default function TermsConditionsPage() {

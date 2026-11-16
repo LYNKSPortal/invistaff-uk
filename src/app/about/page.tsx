@@ -5,13 +5,16 @@ import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/Reveal";
 import { PageHero } from "@/components/sections/PageHero";
 import { CTASection } from "@/components/sections/CTASection";
 import { values } from "@/lib/content/industries";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, buildSocialMetadata } from "@/lib/site";
+
+const description =
+  "Invistaff was founded by Aalish Kissack after seeing first-hand how much money construction and trade businesses lose to disorganised systems. Here's the story behind it.";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "Invistaff was founded by Aalish Kissack after seeing first-hand how much money construction and trade businesses lose to disorganised systems. Here's the story behind it.",
+  description,
   alternates: { canonical: "/about" },
+  ...buildSocialMetadata("About", description, "/about"),
 };
 
 const qualifications = [

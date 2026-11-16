@@ -4,13 +4,16 @@ import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { LinkedInIcon, InstagramIcon, FacebookIcon } from "@/components/ui/SocialIcons";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, buildSocialMetadata } from "@/lib/site";
+
+const description =
+  "Book a free Money Leak Check with Invistaff. Call, email, or send a message and we'll get back to you.";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description:
-    "Book a free Money Leak Check with Invistaff. Call, email, or send a message and we'll get back to you.",
+  description,
   alternates: { canonical: "/contact" },
+  ...buildSocialMetadata("Contact", description, "/contact"),
 };
 
 export default function ContactPage() {

@@ -7,13 +7,16 @@ import { Button } from "@/components/ui/Button";
 import { PageHero } from "@/components/sections/PageHero";
 import { CTASection } from "@/components/sections/CTASection";
 import { serviceSteps } from "@/lib/content/services";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, buildSocialMetadata } from "@/lib/site";
+
+const description =
+  "Money Leak Check, Profit Leak Audit, Fix Projects and Operations Partner: four priced steps that find where construction and trade businesses are losing money and fix the systems behind it.";
 
 export const metadata: Metadata = {
   title: "Services & Pricing",
-  description:
-    "Money Leak Check, Profit Leak Audit, Fix Projects and Operations Partner: four priced steps that find where construction and trade businesses are losing money and fix the systems behind it.",
+  description,
   alternates: { canonical: "/services" },
+  ...buildSocialMetadata("Services & Pricing", description, "/services"),
 };
 
 export default function ServicesPage() {

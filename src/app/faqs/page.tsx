@@ -4,12 +4,16 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { CTASection } from "@/components/sections/CTASection";
 import { faqs } from "@/lib/content/faqs";
+import { buildSocialMetadata } from "@/lib/site";
+
+const description =
+  "Answers to common questions about the Money Leak Check, Profit Leak Audit, pricing, contracts, onboarding, confidentiality and cancellation.";
 
 export const metadata: Metadata = {
   title: "FAQs",
-  description:
-    "Answers to common questions about the Money Leak Check, Profit Leak Audit, pricing, contracts, onboarding, confidentiality and cancellation.",
+  description,
   alternates: { canonical: "/faqs" },
+  ...buildSocialMetadata("FAQs", description, "/faqs"),
 };
 
 export default function FAQsPage() {
