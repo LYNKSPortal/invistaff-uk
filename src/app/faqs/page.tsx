@@ -8,7 +8,7 @@ import { faqs } from "@/lib/content/faqs";
 export const metadata: Metadata = {
   title: "FAQs",
   description:
-    "Answers to common questions about how Invistaff works, what it costs, contracts, onboarding, confidentiality and cancellation.",
+    "Answers to common questions about the Money Leak Check, Profit Leak Audit, pricing, contracts, onboarding, confidentiality and cancellation.",
   alternates: { canonical: "/faqs" },
 };
 

@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/layout/CookieConsent";
 import { siteConfig } from "@/lib/site";
+import { serviceSteps } from "@/lib/content/services";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Invisible support, visible results`,
+    title: `${siteConfig.name} | Busy isn't always profitable`,
     description: siteConfig.description,
     images: [
       {
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Invisible support, visible results`,
+    title: `${siteConfig.name} | Busy isn't always profitable`,
     description: siteConfig.description,
     images: ["/favicon/facebook-twitter-meta-og-image.jpg"],
   },
@@ -93,6 +94,23 @@ const organizationJsonLd = {
   },
   areaServed: siteConfig.serviceArea,
   sameAs: [siteConfig.social.linkedin, siteConfig.social.instagram, siteConfig.social.facebook],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Invistaff services",
+    itemListElement: serviceSteps.map((step) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: step.title,
+        description: step.summary,
+      },
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: step.priceFromGBP,
+        priceCurrency: "GBP",
+      },
+    })),
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

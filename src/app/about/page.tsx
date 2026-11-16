@@ -8,7 +8,7 @@ import { values } from "@/lib/content/industries";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Invistaff",
+  title: "About",
   description:
     "Invistaff was founded by Aalish Kissack after seeing first-hand how much money construction and trade businesses lose to disorganised systems. Here's the story behind it.",
   alternates: { canonical: "/about" },

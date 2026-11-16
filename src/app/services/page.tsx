@@ -10,9 +10,9 @@ import { serviceSteps } from "@/lib/content/services";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Services & Pricing",
   description:
-    "Money Leak Check, Profit Leak Audit, Fix Projects and Operations Partner — four steps that find where construction and trade businesses are losing money and fix the systems behind it.",
+    "Money Leak Check, Profit Leak Audit, Fix Projects and Operations Partner: four priced steps that find where construction and trade businesses are losing money and fix the systems behind it.",
   alternates: { canonical: "/services" },
 };
 

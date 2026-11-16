@@ -7,6 +7,8 @@ export type ServiceStep = {
   title: string;
   icon: LucideIcon;
   price: string;
+  /** Normalised starting price in GBP, for structured data (0 = free). */
+  priceFromGBP: number;
   summary: string;
   detail: string;
   included: string[];
@@ -19,6 +21,7 @@ export const serviceSteps: ServiceStep[] = [
     title: "Money Leak Check",
     icon: PhoneCall,
     price: "Free",
+    priceFromGBP: 0,
     summary:
       "A free 30-minute call to talk through where your business might be losing money.",
     detail:
@@ -35,6 +38,7 @@ export const serviceSteps: ServiceStep[] = [
     title: "Profit Leak Audit",
     icon: SearchCheck,
     price: "From £750",
+    priceFromGBP: 750,
     summary:
       "A fixed-scope review of your pricing, debtors, suppliers and systems, with a written report within 7 days.",
     detail:
@@ -52,6 +56,7 @@ export const serviceSteps: ServiceStep[] = [
     title: "Fix Projects",
     icon: Wrench,
     price: "From £850",
+    priceFromGBP: 850,
     summary: "Fixing the specific issues the audit found.",
     detail:
       "Once we know where the leaks are, we fix them: updating pricing, chasing down what's owed, sorting out supplier terms, and putting the systems in place so the same leak doesn't reopen once the project ends.",
@@ -67,6 +72,7 @@ export const serviceSteps: ServiceStep[] = [
     title: "Operations Partner",
     icon: Handshake,
     price: "£1,000/month",
+    priceFromGBP: 1000,
     summary:
       "I run the systems, chase the money, and report the numbers back to you every month.",
     detail:
