@@ -34,6 +34,15 @@ export const metadata: Metadata = {
     "operations partner for construction business",
   ],
   authors: [{ name: siteConfig.founder }],
+  icons: {
+    icon: [
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/favicon/site.webmanifest",
   openGraph: {
     type: "website",
     locale: "en_GB",
@@ -41,11 +50,20 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} | Invisible support, visible results`,
     description: siteConfig.description,
+    images: [
+      {
+        url: "/favicon/facebook-twitter-meta-og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | Invisible support, visible results`,
     description: siteConfig.description,
+    images: ["/favicon/facebook-twitter-meta-og-image.jpg"],
   },
   alternates: {
     canonical: "/",
