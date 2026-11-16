@@ -72,7 +72,7 @@ function buildEmailHtml(payload: ContactPayload) {
 
   return `
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
-      <h2 style="color:#0a5038;">New discovery call enquiry</h2>
+      <h2 style="color:#0a5038;">New Money Leak Check enquiry</h2>
       <table style="width:100%;border-collapse:collapse;">${rows}</table>
     </div>
   `;
@@ -129,7 +129,7 @@ export async function POST(request: Request) {
       from: "Invistaff Website <notifications@invistaff.com>",
       to: siteConfig.contactFormRecipient,
       replyTo: payload.email,
-      subject: `New discovery call enquiry from ${payload.name} (${payload.businessName})`,
+      subject: `New Money Leak Check enquiry from ${payload.name} (${payload.businessName})`,
       html: buildEmailHtml(payload),
     });
 

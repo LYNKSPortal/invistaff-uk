@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "@/lib/site";
+import { navLinks, siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 
 export function MobileNavigation() {
@@ -67,8 +67,14 @@ export function MobileNavigation() {
                 })}
               </ul>
             </nav>
-            <Button href="/contact" size="lg" className="mt-8 w-full">
-              Book a free discovery call
+            <Button
+              href={siteConfig.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="lg"
+              className="mt-8 w-full"
+            >
+              Book a free Money Leak Check
             </Button>
           </motion.div>
         )}

@@ -22,16 +22,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Operations & Administration Support for Trades Businesses`,
+    default: `${siteConfig.name} | Operational Audits for Construction & Trades Businesses`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
-    "business administration support",
-    "operations support for trades businesses",
-    "outsourced admin Isle of Man",
-    "virtual assistant for construction business",
-    "process improvement for trades",
+    "profit leak audit for construction business",
+    "operational audit for trades business",
+    "money leak check construction",
+    "business systems audit Isle of Man",
+    "operations partner for construction business",
   ],
   authors: [{ name: siteConfig.founder }],
   openGraph: {
@@ -73,7 +73,7 @@ const organizationJsonLd = {
     addressRegion: siteConfig.location,
     addressCountry: "IM",
   },
-  areaServed: siteConfig.location,
+  areaServed: siteConfig.serviceArea,
   sameAs: [siteConfig.social.linkedin, siteConfig.social.instagram, siteConfig.social.facebook],
 };
 

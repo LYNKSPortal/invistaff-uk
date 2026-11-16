@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
-import { navLinks } from "@/lib/site";
+import { navLinks, siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { MobileNavigation } from "./MobileNavigation";
@@ -63,8 +63,8 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href="/contact" size="md">
-            Book a free discovery call
+          <Button href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer" size="md">
+            Book a free Money Leak Check
           </Button>
         </div>
 

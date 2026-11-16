@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
       </h2>
       <p>We use your personal data to:</p>
       <ul className="list-disc space-y-2 pl-6">
-        <li>respond to your enquiry and arrange a discovery call;</li>
+        <li>respond to your enquiry and arrange a Money Leak Check call;</li>
         <li>
           provide, manage and improve the administration and operational
           support services you engage us for;
@@ -253,8 +253,7 @@ export default function PrivacyPolicyPage() {
         <strong> Controller</strong> (for the data we decide how and why to
         use, such as enquiry and contact form data) and as a
         <strong> Processor</strong> (for data we handle on behalf of clients
-        as part of delivering administration and operational support
-        services).
+        as part of delivering our services).
       </p>
 
       <h2 className="font-serif text-xl font-normal text-forest-900">

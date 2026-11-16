@@ -36,7 +36,7 @@ export default function FAQsPage() {
       <PageHero
         eyebrow="FAQs"
         title="Questions, answered plainly."
-        description="If there's something we haven't covered here, get in touch, the discovery call is exactly the place for it."
+        description="If there's something we haven't covered here, get in touch, the Money Leak Check call is exactly the place for it."
         playbackId="Opyjp00yGVq9xo202ARm9S00yHtw00ORMKlFpa3XWFNOZjU"
       />
 

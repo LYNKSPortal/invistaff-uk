@@ -8,7 +8,7 @@ import { processSteps } from "@/lib/content/process";
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "From a free discovery call through to ongoing support, here's the seven-step process behind working with Invistaff.",
+    "From a free Money Leak Check through to ongoing support, here's the seven-step process behind working with Invistaff.",
   alternates: { canonical: "/how-it-works" },
 };
 

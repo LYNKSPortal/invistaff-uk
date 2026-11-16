@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { HeroVideoBackground } from "./HeroVideoBackground";
+import { siteConfig } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -18,7 +19,7 @@ export function Hero() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="mb-6 hidden items-center gap-2 rounded-full border border-forest-deep-15 bg-white px-4 py-1.5 text-xs font-medium uppercase tracking-[0.14em] text-forest-mid sm:inline-flex"
           >
-            Operations &amp; administration support
+            Operational audits for construction &amp; trades
           </motion.p>
 
           <motion.h1
@@ -27,7 +28,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="balance text-[clamp(2.5rem,5.5vw,4.5rem)] font-normal leading-[1.05] text-forest-900"
           >
-            Your business shouldn&apos;t follow you home.
+            Busy isn&apos;t always profitable.
           </motion.h1>
 
           <motion.p
@@ -36,9 +37,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="pretty mt-6 max-w-xl text-lg leading-relaxed text-ink-soft sm:text-xl"
           >
-            Invistaff takes the admin, systems and operational work off your
-            plate, so you can get back to running the business, and get your
-            evenings and weekends back too. No full-time hire required.
+            We find where construction and trade businesses are losing
+            money and fix the systems behind it.
           </motion.p>
 
           <motion.div
@@ -47,8 +47,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="mt-10 flex flex-wrap items-center gap-4"
           >
-            <Button href="/contact" size="lg" withArrow>
-              Book a free discovery call
+            <Button href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer" size="lg" withArrow>
+              Book a free Money Leak Check
             </Button>
             <Button href="/services" variant="outline" size="lg">
               Explore how we help
@@ -61,8 +61,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.45 }}
             className="mt-6 text-sm text-ink-soft"
           >
-            Free, no-obligation call. You don&apos;t need to know what you need
-            &mdash; that&apos;s what the conversation is for.
+            Free, no-obligation 30-minute call. You don&apos;t need to know
+            where the leak is &mdash; that&apos;s what the call is for.
           </motion.p>
         </div>
       </Container>

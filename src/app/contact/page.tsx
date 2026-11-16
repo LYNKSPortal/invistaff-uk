@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a free, no-obligation discovery call with Invistaff. Call, email, or send a message and we'll get back to you.",
+    "Book a free Money Leak Check with Invistaff. Call, email, or send a message and we'll get back to you.",
   alternates: { canonical: "/contact" },
 };
 
@@ -23,12 +23,12 @@ export default function ContactPage() {
               Contact
             </p>
             <h1 className="balance text-[clamp(2.25rem,4vw,3.25rem)] font-normal leading-[1.1] text-forest-900">
-              Book a free, no-obligation discovery call.
+              Book a free Money Leak Check.
             </h1>
             <p className="pretty mt-5 text-base leading-relaxed text-ink-soft">
-              Tell us a little about your business and what&apos;s taking up
-              your time. You don&apos;t need to know which service you need,
-              that&apos;s what the call is for.
+              Tell us a little about your business and where you think money
+              might be slipping. You don&apos;t need to know where the leak
+              is, that&apos;s what the call is for.
             </p>
 
             <ul className="mt-8 space-y-4">

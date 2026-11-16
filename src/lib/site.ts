@@ -4,9 +4,14 @@ export const siteConfig = {
   url: "https://invistaff.co.uk",
   tagline: "Invisible support, visible results.",
   description:
-    "Invistaff provides flexible administration and operational support for busy trades and construction businesses in the Isle of Man, helping owners get their time back.",
+    "Invistaff finds where construction and trade businesses are losing money, pricing, debtors, suppliers and systems, and fixes the systems behind it.",
   founder: "Aalish Kissack",
   location: "Isle of Man",
+  // Broader marketing-facing service area (footer, etc.) — kept separate
+  // from `location` since the latter is used in legal/registration
+  // contexts (jurisdiction, registered base) where only the Isle of Man
+  // is accurate.
+  serviceArea: "Isle of Man and the North West",
   email: "info@invistaff.com",
   // Inbox that receives new contact form submissions (separate from the
   // public-facing contact email shown to visitors).
@@ -22,7 +27,8 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/invistaff",
     facebook: "https://www.facebook.com/invistaff",
   },
-  bookingUrl: "#contact",
+  // TODO: replace with the real Calendly (or other) booking link.
+  bookingUrl: "https://calendly.com/",
 };
 
 export const navLinks = [

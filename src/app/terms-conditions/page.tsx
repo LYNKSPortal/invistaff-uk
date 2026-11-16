@@ -37,7 +37,7 @@ export default function TermsConditionsPage() {
         support services, as described on this website. The specific scope,
         deliverables, pricing and timescales for any engagement are agreed
         directly with the client in writing (including by email) before work
-        begins, typically following a free discovery call. These terms apply
+        begins, typically following a free Money Leak Check call. These terms apply
         alongside, and do not override, anything specifically agreed with a
         client as part of their engagement.
       </p>
@@ -47,12 +47,14 @@ export default function TermsConditionsPage() {
       </h2>
       <p>
         There is no fixed minimum contract. Support may be delivered as a
-        one-off project, on an ongoing administrative or operational basis,
-        or as a retainer, depending on what&apos;s agreed. Pricing is
-        tailored to the support required, with packages typically starting
-        from £99; exact pricing, invoicing arrangements and any notice
-        period for ending an ongoing engagement are set out when the scope
-        of work is agreed, rather than fixed in advance for every client.
+        one-off Profit Leak Audit or Fix Project, or as an ongoing
+        Operations Partner retainer, depending on what&apos;s agreed.
+        Current indicative pricing is a free Money Leak Check call, a
+        Profit Leak Audit from £750, a Fix Project from £850, and
+        Operations Partner at £1,000 a month; exact pricing, invoicing
+        arrangements and any notice period for ending an ongoing
+        engagement are set out when the scope of work is agreed, rather
+        than fixed in advance for every client.
       </p>
 
       <h2 className="font-serif text-xl font-normal text-forest-900">

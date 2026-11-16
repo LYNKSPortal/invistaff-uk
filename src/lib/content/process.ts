@@ -7,44 +7,44 @@ export type ProcessStep = {
 export const processSteps: ProcessStep[] = [
   {
     number: "01",
-    title: "Book a free discovery call",
+    title: "Book a free Money Leak Check",
     description:
-      "A relaxed, no-obligation conversation to talk about your business and what's currently taking up your time. You don't need to know exactly what you need, that's what this call is for.",
+      "A relaxed, no-obligation 30-minute call to talk about your business and where money might be slipping. You don't need to know where the leak is, that's what this call is for.",
   },
   {
     number: "02",
     title: "Understand the problem",
     description:
-      "We dig into where time is being lost, whether that's admin, communication, quoting, invoicing, or the systems (or lack of them) behind the scenes.",
+      "We dig into where money is being lost, whether that's pricing, unpaid invoices, supplier costs, or the systems (or lack of them) behind the scenes.",
   },
   {
     number: "03",
-    title: "Identify the right support",
+    title: "Scope the Profit Leak Audit",
     description:
-      "Based on what we've learned, we recommend the support that will actually make a difference, whether that's hands-on admin help, an operational review, or both.",
+      "If there's something worth digging into, we agree a fixed scope for a Profit Leak Audit covering the areas most likely to be costing you money.",
   },
   {
     number: "04",
-    title: "Agree the scope",
+    title: "Deliver the audit, with a £ figure attached",
     description:
-      "We set out clearly what's included, how we'll work together, and what it will cost, so there are no surprises on either side.",
+      "Within 7 days you get a written report putting a £ figure on each leak found, so you can see exactly what it's costing and what's worth fixing first.",
   },
   {
     number: "05",
-    title: "Onboarding",
+    title: "Fix the issues found",
     description:
-      "We get set up with access to the right systems and information, and take the time to understand how your business runs day to day.",
+      "We agree which leaks to fix and get to work: updating pricing, chasing down what's owed, sorting out supplier terms, and putting the systems in place behind them.",
   },
   {
     number: "06",
-    title: "Ongoing support / project delivery",
+    title: "Keep it fixed, or hand it back",
     description:
-      "We get to work, handling the agreed admin, running the project, or both, keeping you updated without needing to be chased for progress.",
+      "Some clients want ongoing support as an Operations Partner, running the systems and chasing the money month to month. Others just want the fix handed back to them, cleanly documented.",
   },
   {
     number: "07",
     title: "Review and improve",
     description:
-      "We check in on how things are working and adjust as your business changes, so the support you have continues to earn its place.",
+      "We check in on how the fixes are holding up and adjust as your business changes, so profit stays protected rather than leaking out again.",
   },
 ];

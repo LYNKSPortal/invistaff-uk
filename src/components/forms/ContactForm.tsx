@@ -138,7 +138,7 @@ export function ContactForm() {
         <h3 className="font-serif text-2xl text-forest-900">Thank you</h3>
         <p className="pretty max-w-sm text-ink-soft">
           We&apos;ve received your message and will be in touch shortly to
-          arrange your free discovery call.
+          arrange your free Money Leak Check.
         </p>
         <Button variant="secondary" onClick={() => setStatus("idle")} type="button">
           Send another message

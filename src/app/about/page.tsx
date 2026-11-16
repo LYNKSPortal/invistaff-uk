@@ -10,7 +10,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Invistaff",
   description:
-    "Invistaff was founded by Aalish Kissack after seeing first-hand how disorganised the admin and operational side of trades businesses can become. Here's the story behind it.",
+    "Invistaff was founded by Aalish Kissack after seeing first-hand how much money construction and trade businesses lose to disorganised systems. Here's the story behind it.",
   alternates: { canonical: "/about" },
 };
 
@@ -46,43 +46,42 @@ export default function AboutPage() {
               </h2>
               <div className="pretty mt-5 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  The idea for Invistaff came from working inside a
-                  construction business where the processes were all over
-                  the place. If someone went on holiday, things started
-                  falling apart within days, nobody had a clear way to leave
-                  notes, there were no standard operating procedures, and
-                  most of it was still running on paper. Stock ran out
-                  constantly, not because anyone wasn&apos;t trying, but
-                  because there was no system catching it before it became a
-                  problem.
+                  Invistaff started inside a construction business where the
+                  processes were all over the place. If someone went on
+                  holiday, things fell apart within days. There was no
+                  clear way to leave notes and no standard procedures, and
+                  most of it still ran on paper. Stock ran out constantly.
+                  That wasn&apos;t because nobody was trying. There was just
+                  no system catching it before it cost us a job.
                 </p>
                 <p>
-                  Talking to other business owners in construction, it
-                  became clear this wasn&apos;t unique to one company. The
-                  same gaps kept coming up, no documentation, no continuity
-                  when someone was away, processes that only worked because
-                  one person happened to be holding it all together in
-                  their head.
+                  That&apos;s the part that stuck with me. It wasn&apos;t
+                  just messy. It was expensive. Every missed reorder,
+                  unchased quote and late invoice was money the business
+                  had already earned and was letting go.
                 </p>
                 <p>
-                  Invistaff exists to fix that: to build the systems,
-                  documentation and day-to-day admin structure that mean a
-                  business doesn&apos;t fall over the moment someone takes a
-                  week off.
+                  When I talked to other owners in construction, I heard
+                  the same story every time: no documentation, nothing in
+                  place when someone was off, and a business that only
+                  worked because one person was holding it all in their
+                  head. And underneath it, profit leaking out in places
+                  nobody had time to look.
                 </p>
                 <p>
-                  {siteConfig.founder} brings years of operational
-                  experience within the construction industry, alongside
-                  two years working on-site as a fire alarm engineer,
-                  giving her an understanding of both the practical and
-                  operational sides of these businesses, not just the admin
-                  in isolation.
+                  I&apos;ve been in construction since I was 16. I started
+                  as an apprentice electrician, spent two years on site as
+                  a fire alarm engineer, and have run operations in the
+                  industry since. I know how a job looks from the van and
+                  from the office, and where the money goes missing
+                  between the two.
                 </p>
                 <p>
-                  Invistaff was built to sit in the practical middle ground:
-                  more capable and more invested than a task-by-task VA
-                  service, without asking a business to commit to a
-                  full-time employee before it&apos;s ready to.
+                  That&apos;s what {siteConfig.name} does. I find where a
+                  business is losing money, put a figure on it, and build
+                  the systems that stop it happening again. They&apos;re
+                  the kind of systems that mean you can take a week off and
+                  come back to a business that&apos;s still making money.
                 </p>
               </div>
             </Reveal>
@@ -100,8 +99,9 @@ export default function AboutPage() {
                 ))}
               </ul>
               <div className="mt-6 border-t border-forest-deep-15 pt-5 text-sm text-ink-soft">
-                <p>Years of operational experience in construction</p>
-                <p className="mt-1">~2 years on-site as a fire alarm engineer</p>
+                <p>In construction since age 16, starting as an apprentice electrician</p>
+                <p className="mt-1">2 years on-site as a fire alarm engineer</p>
+                <p className="mt-1">Running operations in construction ever since</p>
               </div>
             </Reveal>
           </div>

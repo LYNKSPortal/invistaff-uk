@@ -4,7 +4,9 @@ import { LinkedInIcon, InstagramIcon, FacebookIcon } from "@/components/ui/Socia
 import { Logo } from "./Logo";
 import { Container } from "@/components/ui/Container";
 import { siteConfig, navLinks, footerLegalLinks } from "@/lib/site";
-import { servicePillars } from "@/lib/content/services";
+import { serviceSteps } from "@/lib/content/services";
+
+const footerServiceLinks = serviceSteps.filter((step) => step.slug !== "money-leak-check");
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -19,8 +21,8 @@ export function Footer() {
               {siteConfig.tagline}
             </p>
             <p className="pretty mt-4 max-w-sm text-sm leading-relaxed text-ink-soft">
-              Outsourced administration and operations support for busy trades
-              and construction businesses, based in the Isle of Man.
+              We find where construction and trade businesses are losing
+              money, and fix the systems behind it.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a
@@ -72,13 +74,13 @@ export function Footer() {
           <nav aria-label="Services navigation">
             <h3 className="text-sm font-semibold text-forest-900">Services</h3>
             <ul className="mt-4 space-y-3">
-              {servicePillars.map((pillar) => (
-                <li key={pillar.id}>
+              {footerServiceLinks.map((step) => (
+                <li key={step.slug}>
                   <Link
-                    href={`/services#${pillar.id}`}
+                    href={`/services#${step.slug}`}
                     className="link-underline text-sm text-ink-soft hover:text-forest-900"
                   >
-                    {pillar.title}
+                    {step.title}
                   </Link>
                 </li>
               ))}
@@ -108,7 +110,7 @@ export function Footer() {
               </li>
               <li className="pt-1">{siteConfig.hours.weekday}</li>
               <li>{siteConfig.hours.weekend}</li>
-              <li className="pt-1">{siteConfig.location}</li>
+              <li className="pt-1">{siteConfig.serviceArea}</li>
             </ul>
           </div>
         </div>
