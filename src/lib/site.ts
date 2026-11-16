@@ -27,8 +27,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/invistaff",
     facebook: "https://www.facebook.com/invistaff",
   },
-  // TODO: replace with the real Calendly (or other) booking link.
-  bookingUrl: "https://calendly.com/",
+  bookingUrl: "https://calendly.com/invistaff-info/30min",
 };
 
 // Shared Open Graph / Twitter image, reused across every page so link
