@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Invistaff",
-  domain: "invistaff.co.uk",
-  url: "https://invistaff.co.uk",
+  domain: "invistaff.com",
+  url: "https://invistaff.com",
   tagline: "Invisible support, visible results.",
   description:
     "Invistaff finds where construction and trade businesses are losing money, pricing, debtors, suppliers and systems, and fixes the systems behind it.",
